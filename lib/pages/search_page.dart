@@ -60,7 +60,7 @@ class _searchPageState extends State<searchPage> {
                   decoration: InputDecoration(
                     contentPadding:
                         EdgeInsets.symmetric(vertical: 32, horizontal: 24),
-                    label: Text('Search'),
+                    label: Text('Search ex: london'),
                     suffixIcon: IconButton(
                         icon: Icon(Icons.search),
                         onPressed: () async {
@@ -85,7 +85,7 @@ class _searchPageState extends State<searchPage> {
                           }
                         }),
                     border: OutlineInputBorder(),
-                    hintText: 'Enter City',
+                    hintText: 'Enter City ex: london',
                   ),
                 ),
                 SizedBox(
