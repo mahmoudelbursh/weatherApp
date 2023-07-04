@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:snackbar/snackbar.dart';
 
 import 'package:weather_app/models/weather_model.dart';
-import 'package:weather_app/pages/snackbar.dart';
+//import 'package:weather_app/pages/snackbar.dart';
 import 'package:weather_app/providers/weather_provider.dart';
 import 'package:weather_app/services/weather_services.dart';
 
@@ -53,7 +53,7 @@ class _searchPageState extends State<searchPage> {
                     } catch (e) {
                       final snackBar = SnackBar(
                           content:
-                              Text('ERROR , check your internet or cuntry'));
+                              Text('ERROR , check your internet or cuntry!'));
                       ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     }
                   },
@@ -91,29 +91,29 @@ class _searchPageState extends State<searchPage> {
                 SizedBox(
                   height: 20,
                 ),
-                TextField(
-                  onChanged: (value) {
-                    //Do something with the user input.
-                  },
-                  decoration: InputDecoration(
-                    hintText: 'Enter your CITY by map.',
-                    contentPadding:
-                        EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.lightBlueAccent, width: 1.0),
-                      borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Colors.lightBlueAccent, width: 2.0),
-                      borderRadius: BorderRadius.all(Radius.circular(32.0)),
-                    ),
-                  ),
-                ),
+                //   TextField(
+                //     onChanged: (value) {
+                //       //Do something with the user input.
+                //     },
+                //     decoration: InputDecoration(
+                //       hintText: 'Enter your CITY by map.',
+                //       contentPadding:
+                //           EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                //       border: OutlineInputBorder(
+                //         borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                //       ),
+                //       enabledBorder: OutlineInputBorder(
+                //         borderSide:
+                //             BorderSide(color: Colors.lightBlueAccent, width: 1.0),
+                //         borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                //       ),
+                //       focusedBorder: OutlineInputBorder(
+                //         borderSide:
+                //             BorderSide(color: Colors.lightBlueAccent, width: 2.0),
+                //         borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                //       ),
+                //     ),
+                //   ),
               ],
             ),
           ),
